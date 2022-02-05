@@ -1,0 +1,11 @@
+<p-sidebar
+  position="left"
+  [(visible)]="visible"
+  [baseZIndex]="10000"
+>
+  <a [routerLink]="['/resource']" (click)="closeSideBar()">Resource</a><br>
+  <a [routerLink]="['/project']" (click)="closeSideBar()">Project</a><br>
+</p-sidebar>
+
+<p-button (click)="openSidebar()" label="Click Here!">
+</p-button>
